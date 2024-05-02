@@ -4,6 +4,8 @@ date: 2024-03-10 00:20:53
 tags:
     - python
     - subprocess
+photos:
+    - /images/python.png
 ---
 
 ```python

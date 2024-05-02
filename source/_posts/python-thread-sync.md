@@ -4,6 +4,8 @@ date: 2024-03-10 00:20:04
 tags:
     - python
     - threading
+photos:
+    - /images/python.png
 ---
 
 ```python

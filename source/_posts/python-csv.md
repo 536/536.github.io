@@ -4,6 +4,8 @@ date: 2024-03-10 00:19:00
 tags:
     - python
     - csv
+photos:
+    - /images/python.png
 ---
 
 ```python

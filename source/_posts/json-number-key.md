@@ -4,6 +4,8 @@ date: 2024-03-09 19:40:26
 tags:
     - json
     - python
+photos:
+    - /images/python.png
 ---
 
 ```text
