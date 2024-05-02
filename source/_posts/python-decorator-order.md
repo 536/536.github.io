@@ -2,6 +2,9 @@
 title: python-decorator-order
 date: 2024-04-27 20:31:26
 tags:
+    - python
+photos:
+    - /images/python.png
 ---
 
 ```python

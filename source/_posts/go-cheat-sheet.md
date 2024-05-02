@@ -2,6 +2,9 @@
 title: go-cheat-sheet
 date: 2024-04-22 19:13:54
 tags:
+    - go
+photos:
+    - /images/go.png
 ---
 
 ## install

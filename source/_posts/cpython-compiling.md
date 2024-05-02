@@ -4,6 +4,8 @@ date: 2024-03-06 13:44:49
 tags:
     - cpython
     - python
+photos:
+    - /images/python.png
 ---
 
 ## ModuleNotFoundError: No Module named '_sqlite3'
