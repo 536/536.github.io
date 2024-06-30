@@ -7,7 +7,7 @@ photos:
     - /images/violent monkey.png
 ---
 
-Install [this script](https://gist.githubusercontent.com/536/2a4a0a9dfbcca7258c09c08bffa14e0b/raw/Raw%2520Code%2520Highlighter.js) via [violent monkey](https://violentmonkey.github.io/), then raw code pages shall been highlighted.
+Install <a href=https://gist.githubusercontent.com/536/2a4a0a9dfbcca7258c09c08bffa14e0b/raw/Raw%2520Code%2520Highlighter.user.js>this script</a> via [violent monkey](https://violentmonkey.github.io/), then raw code pages shall been highlighted.
 
 ![before](/images/raw-code-highlighter-01.png)
 
