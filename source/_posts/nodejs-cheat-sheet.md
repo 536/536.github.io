@@ -4,52 +4,35 @@ date: 2024-03-09 23:59:46
 tags:
     - nodejs
     - npm
-    - n
     - pnpm
 ---
 
-## npm
+## nvm
+
+> https://nodejs.org/en/download/package-manager/current
 
 ```bash
-# 查看npm当前版本
-npm -v
-# 升级到最新版本
-sudo npm install -g npm
-# 升级到指定版本
-sudo npm install -g npm@8.3.0
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 ```
 
-## n
+## node
 
 ```bash
-# 安装n模块，使用n命令升级node
-sudo npm install -g n
-# 升级到稳定版
-sudo n stable
-# 升级到指定版本
-sudo n v16.13.1
-# 或者
-sudo n 16.13.1
+nvm install 20
 ```
 
 ## pnpm
 
 ```bash
-sudo npm install -g pnpm
+npm install -g pnpm
 ```
 
-## 替换国内源
+### pnpm替换国内源
 
 ```bash
-npm config set registry https://registry.npmmirror.com
-npm config set registry http://registry.npmjs.org
-```
-
-## 设置代理
-
-```bash
-npm config set proxy=http://127.0.0.1:8087
-npm config delete proxy
-
-npm config delete https-proxy
+pnpm config set registry https://registry.npmmirror.com
+# 还原
+pnpm config set registry https://registry.npmjs.org
+# 查看配置
+pnpm get registry
 ```
