@@ -80,3 +80,54 @@ def queen(solution=None, row_num=0):
 
 queen()
 ```
+
+## 最长回文子串
+
+```python
+def longest_palindrome(s: str) -> str:
+    n = len(s)
+    if n < 2:
+        return s
+    start, end = 0, 0
+    for i in range(n):
+        # 奇数长度回文串
+        left, right = i, i
+        while left >= 0 and right < n and s[left] == s[right]:
+            left -= 1
+            right += 1
+        if right - left - 1 > end - start:
+            start, end = left + 1, right
+        # 偶数长度回文串
+        left, right = i, i + 1
+        while left >= 0 and right < n and s[left] == s[right]:
+            left -= 1
+            right += 1
+        if right - left - 1 > end - start:
+            start, end = left + 1, right
+    return s[start:end]
+
+s = "babad"
+print(longest_palindrome(s)) # "bab"
+```
+
+```python
+def is_palindrome(s: str) -> bool:
+    return s == s[::-1]
+
+def make_child_string(s: str, sep: int) -> list[str]:
+    out: list[str] = []
+    for i in range(len(s) - sep + 1):
+        out.append(s[i:sep + i])
+    return out
+
+def main(s: str) -> int:
+    for i in range(len(s), 0, -1):
+        l = make_child_string(s, i)
+        for ss in l:
+            if is_palindrome(ss):
+                # print(f"{l=}, {ss=}")
+                return i
+    assert False, "Will never reach this line"
+
+print(main(s=input()))
+```
